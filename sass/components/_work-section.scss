@@ -1,5 +1,10 @@
 .work-section {
-    padding-bottom: 94px;
+display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+        padding-bottom: 94px;
+    }
 }
 
 .work-list {

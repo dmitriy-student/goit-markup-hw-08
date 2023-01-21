@@ -4,6 +4,12 @@
 
 .talant-list {
     display: flex;
+    
+
+    @media (max-width: 768px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     &__subtitle {
         text-transform: uppercase;
@@ -13,13 +19,23 @@
         margin-bottom: 10px;
     }
 
+    &__item:not(:last-child) {
+        @media (min-width: 1200px) {
+        margin-right: 30px;
+        }
+    }
+
     &__item {
         width: 100%;
         max-width: 270px;
 
-        &:not(:last-child) {
-            margin-right: 30px;
-        }
+
+    @media (max-width: 768px) {
+        margin-top: 30px;
+        margin-right: 15px;
+        margin-left: 15px;
+        justify-content: center;
+    }        
     }
 
     &__svg {
