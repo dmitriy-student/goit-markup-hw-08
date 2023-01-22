@@ -30,14 +30,14 @@
             <a href="./index.html" class="link logo">Web<span>Studio</span></a>
             <ul class="list header-navigation__list">
               <li>
-                <a class="link header-navigation__link" href="./index.html"
+                <a
+                  class="link header-navigation__link header-navigation__link--current-page"
+                  href="./index.html"
                   >Студія</a
                 >
               </li>
               <li>
-                <a
-                  class="link header-navigation__link header-navigation__link--current-page"
-                  href="./portfolio.html"
+                <a class="link header-navigation__link" href="./portfolio.html"
                   >Портфоліо</a
                 >
               </li>
@@ -67,6 +67,15 @@
               >
             </li>
           </ul>
+          <button
+            class="mobile-menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -95,6 +104,10 @@
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
                   <img
+                    srcset="
+                      ./images/tehnokryak.jpg    1x,
+                      ./images/tehnokryak@2x.jpg 2x
+                    "
                     src="./images/tehnokryak.jpg"
                     alt="Приклад проекту технокряк"
                   />
@@ -114,6 +127,10 @@
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
                   <img
+                    srcset="
+                      ./images/poster-basket-team.jpg    1x,
+                      ./images/poster-basket-team@2x.jpg 2x
+                    "
                     src="./images/poster-basket-team.jpg"
                     alt="Приклад проекту постер New Orlean vs Golden Star"
                   />
@@ -133,6 +150,10 @@
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
                   <img
+                    srcset="
+                      ./images/seafood-restauran.jpg    1x,
+                      ./images/seafood-restauran@2x.jpg 2x
+                    "
                     src="./images/seafood-restauran.jpg"
                     alt="Приклад проекту Ресторан Seafood"
                   />
@@ -151,7 +172,11 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
-                  <img src="./images/prime.jpg" alt="Приклад проекту Prime" />
+                  <img
+                    srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
+                    src="./images/prime.jpg"
+                    alt="Приклад проекту Prime"
+                  />
                   <p class="portfolio-list-hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -167,7 +192,11 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
-                  <img src="./images/boxes.jpg" alt="Приклад проекту Boxes" />
+                  <img
+                    srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                    src="./images/boxes.jpg"
+                    alt="Приклад проекту Boxes"
+                  />
                   <p class="portfolio-list-hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -184,6 +213,10 @@
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
                   <img
+                    srcset="
+                      ./images/inspiration-has-no-borders.jpg    1x,
+                      ./images/inspiration-has-no-borders@2x.jpg 2x
+                    "
                     src="./images/inspiration-has-no-borders.jpg"
                     alt="Приклад проекту Inspiration has no Borders"
                   />
@@ -203,6 +236,10 @@
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
                   <img
+                    srcset="
+                      ./images/limited-edition.jpg    1x,
+                      ./images/limited-edition@2x.jpg 2x
+                    "
                     src="./images/limited-edition.jpg"
                     alt="Приклад проекту Видання Limited Edition"
                   />
@@ -221,7 +258,11 @@
             <li class="portfolio-list-item">
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
-                  <img src="./images/lab.jpg" alt="Приклад проекту LAB" />
+                  <img
+                    srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
+                    src="./images/lab.jpg"
+                    alt="Приклад проекту LAB"
+                  />
                   <p class="portfolio-list-hidden">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -238,6 +279,10 @@
               <a href="" class="portfolio-list-link link">
                 <div class="portfolio-list-example">
                   <img
+                    srcset="
+                      ./images/growing-business.jpg    1x,
+                      ./images/growing-business@2x.jpg 2x
+                    "
                     src="./images/growing-business.jpg"
                     alt="Приклад проекту Growing Business"
                   />
@@ -343,5 +388,62 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-button js-close-menu">
+        <svg width="40" height="40" class="">
+          <use href="./images/icons.svg#icon-close-button-40px"></use>
+        </svg>
+      </button>
+      <nav class="mobile-navigation">
+        <ul class="list mobile-navigation__list">
+          <li>
+            <a class="link mobile-navigation__link" href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a
+              class="link mobile-navigation__link mobile-navigation__link--current-page"
+              href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li>
+            <a class="link mobile-navigation__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-address__list list">
+        <li class="mobile-address__item">
+          <a class="link mobile-address__link-tel" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-address__item">
+          <a
+            class="link mobile-address__link-email"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>

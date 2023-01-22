@@ -67,6 +67,15 @@
               >
             </li>
           </ul>
+          <button
+            class="mobile-menu-button js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header>
@@ -144,6 +153,7 @@
           <ul class="work-list list">
             <li class="work-list__item">
               <img
+                srcset="./images/work1.jpg 1x, ./images/work1@2x.jpg 2x"
                 src="./images/work1.jpg"
                 alt="Процесс работы 1"
                 width="370"
@@ -152,6 +162,7 @@
             </li>
             <li class="work-list__item">
               <img
+                srcset="./images/work2.jpg 1x, ./images/work2@2x.jpg 2x"
                 src="./images/work2.jpg"
                 alt="Процесс работы 2"
                 width="370"
@@ -160,6 +171,7 @@
             </li>
             <li class="work-list__item">
               <img
+                srcset="./images/work3.jpg 1x, ./images/work3@2x.jpg 2x"
                 src="./images/work3.jpg"
                 alt="Процесс работы 3"
                 width="370"
@@ -175,6 +187,10 @@
           <ul class="list team-list">
             <li class="team-card">
               <img
+                srcset="
+                  ./images/igor-demyanenko.jpg    1x,
+                  ./images/igor-demyanenko@2x.jpg 2x
+                "
                 src="./images/igor-demyanenko.jpg"
                 alt="Ігор Дем'яненко"
                 width="270"
@@ -220,6 +236,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/olga-repina.jpg    1x,
+                  ./images/olga-repina@2x.jpg 2x
+                "
                 src="./images/olga-repina.jpg"
                 alt="Ольга Рєпіна"
                 width="270"
@@ -265,6 +285,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/mykola-tarasov.jpg    1x,
+                  ./images/mykola-tarasov@2x.jpg 2x
+                "
                 src="./images/mykola-tarasov.jpg"
                 alt="Микола Тарасов"
                 width="270"
@@ -310,6 +334,10 @@
             </li>
             <li class="team-card">
               <img
+                srcset="
+                  ./images/mykhaylo-yermakov.jpg    1x,
+                  ./images/mykhaylo-yermakov@2x.jpg 2x
+                "
                 src="./images/mykhaylo-yermakov.jpg"
                 alt="Михайло Єрмаков"
                 width="270"
@@ -493,6 +521,61 @@
       </div>
     </footer>
 
+    <div class="mobile-menu-container js-menu-container" id="mobile-menu">
+      <button class="mobile-menu-button js-close-menu">
+        <svg width="40" height="40" class="">
+          <use href="./images/icons.svg#icon-close-button-40px"></use>
+        </svg>
+      </button>
+      <nav class="mobile-navigation">
+        <ul class="list mobile-navigation__list">
+          <li>
+            <a
+              class="link mobile-navigation__link mobile-navigation__link--current-page"
+              href="./index.html"
+              >Студія</a
+            >
+          </li>
+          <li>
+            <a class="link mobile-navigation__link" href="./portfolio.html"
+              >Портфоліо</a
+            >
+          </li>
+          <li>
+            <a class="link mobile-navigation__link" href="">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="mobile-address__list list">
+        <li class="mobile-address__item">
+          <a class="link mobile-address__link-tel" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-address__item">
+          <a
+            class="link mobile-address__link-email"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-social">
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-social__list list">
+          <a class="mobile-social__link link" href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal-container">
@@ -582,5 +665,6 @@
       </div>
     </div>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
