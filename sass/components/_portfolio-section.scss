@@ -1,5 +1,9 @@
 .portfolio-section {
     padding: 94px 0;
+    @media (max-width: 1199px) {
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
 }
 
 .portfolio-list-btn {
@@ -11,6 +15,12 @@
     @media (min-width: 768px) {
         flex-wrap: nowrap;
         justify-content: center;
+    }
+
+    &__item{
+    @media (max-width: 1199px) {
+            margin-top: 15px;
+        }
     }
 }
 

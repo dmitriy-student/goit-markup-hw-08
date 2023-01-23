@@ -964,6 +964,12 @@ p {
 .portfolio-section {
   padding: 94px 0;
 }
+@media (max-width: 1199px) {
+  .portfolio-section {
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+}
 
 .portfolio-list-btn {
   display: -webkit-box;
@@ -983,6 +989,11 @@ p {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 1199px) {
+  .portfolio-list-btn__item {
+    margin-top: 15px;
   }
 }
 
