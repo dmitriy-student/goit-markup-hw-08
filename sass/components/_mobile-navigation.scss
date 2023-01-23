@@ -51,18 +51,22 @@
 }
 
 .mobile-navigation__list {
-
+    
 }
 
 .mobile-navigation__link {
     font-weight: 500;
-    font-size: 40px;
+    font-size: 32px;
     line-height: 1.175;
     letter-spacing: 0.02em;
 
     display: block;
     padding: 10px;
     color: inherit;
+
+    @media (min-width: 480px) {
+        font-size: 40px;
+    }
 
     &--current-page{
         color: var(--accent-blue);
@@ -73,45 +77,79 @@
     
     &__list{
         margin-top: auto;
-        margin-bottom: 64px;
     }
 
     &__item{
-
+        margin-bottom: 32px;
     }
 
     &__link-tel{
         font-weight: 500;
-        font-size: 34px;
+        font-size: 27px;
         line-height: 1.18;
         letter-spacing: 0.02em;
         color: var(--accent-blue);
+
+        @media (min-width: 480px) {
+            font-size: 34px;
+        }
     }
 
     &__link-email {
         font-weight: 500;
-        font-size: 24px;
-        line-height: 28px;
+        font-size: 21px;
+        line-height: 22px;
         letter-spacing: 0.02em;
         color: var(--color-header-adress);
+
+        @media (min-width: 480px) {
+            font-size: 24px;
+        }
     }
 }
 
 .mobile-social{
     margin: 0px;
     padding: 0px;
+    margin-top: 32px;
 
     display: flex;
     color: var(--accent-blue);
 
-    &__list:not(:last-child){
-        margin-right: 20px;
+    &__list:nth-child(1) {
+            padding-right: 15px;
+            border-right: 1px solid var(--border-color-mobile-menu);
+                
+        }
+    
+    &__list:nth-child(2) {
+        padding: 0 15px;
+        border-right: 1px solid var(--border-color-mobile-menu);
+        border-left: 1px solid var(--border-color-mobile-menu);
+
+    }
+
+    &__list:nth-child(3){
+        padding: 0 15px;
+        border-right: 1px solid var(--border-color-mobile-menu);
+        border-left: 1px solid var(--border-color-mobile-menu);
+        
+    }
+
+    &__list:nth-child(4) {
+        padding-left: 15px;
+        border-left: 1px solid var(--border-color-mobile-menu);
+
     }
 
     &__link{
         font-weight: 500;
-        font-size: 18px;
+        font-size: 10px;
         letter-spacing: 0.02em;
+
+        @media (min-width: 480px) {
+            font-size: 18px;
+        }
     }
 
 }

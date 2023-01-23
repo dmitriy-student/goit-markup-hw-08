@@ -6,7 +6,11 @@
     letter-spacing: 0.03em;
     color: var(--accent-blue);
     margin-right: 93px;
-    padding: 24px 0 25px;
+    padding: 16px 0 16px;
+
+    @media (min-width: 768px) {
+        padding: 24px 0 25px;
+    }
 }
 
 .logo>span {

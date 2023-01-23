@@ -1,15 +1,15 @@
 .portfolio-section {
+    padding: 45px 15px 60px 15px;
+
+
+    @media (min-width: 1200px) {
     padding: 94px 0;
-    @media (max-width: 1199px) {
-        padding-top: 45px;
-        padding-bottom: 60px;
     }
 }
 
 .portfolio-list-btn {
     display: flex;
     justify-content: start;
-    margin-bottom: 50px;
     flex-wrap: wrap;
 
     @media (min-width: 768px) {
@@ -31,6 +31,12 @@
 .portfolio-list-example {
     position: relative;
     overflow: hidden;
+}
+
+.portfolio-list__img{
+    @media (max-width: 480px) {
+        width: calc(100vw - 30px);
+    }
 }
 
 .portfolio-list-hidden {
@@ -103,21 +109,24 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: calc(-1 * var(--portfolio-list-margin));
-    margin-bottom: calc(-1 * var(--portfolio-list-margin));
+    // margin-right: calc(-1 * var(--portfolio-list-margin));
+    // margin-bottom: calc(-1 * var(--portfolio-list-margin));
+    margin-top: 40px;
 
     @media (min-width:768px) {
     justify-content: start;
+    margin-top: 30px;
     }
 
     @media (min-width: 1200px) {
     justify-content: center;
+    margin-top: 50px;
     }
 }
 
 .portfolio-list-item {
     margin-bottom: var(--portfolio-list-margin);
-    flex-basis: 100%;
+    // flex-basis: 100%;
 
     @media (min-width:768px) {
     flex-basis: calc(100% / 2 - 30px);
